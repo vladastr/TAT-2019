@@ -10,16 +10,16 @@ namespace Dev_1
     {
         string[] resultsequences = { };
 
-        public static void Find(string s)
+        public static void Find(string inputsequence)
         {
-            if (s.Length < 2)
+            if (inputsequence.Length < 2)
             {
                 Console.WriteLine("Less than 2 symbols!");
                 return;
             }
-            for (int i = 0, j = 0; i < s.Length; i++)
+            for (int i = 0, j = 0; i < inputsequence.Length; i++)
             {
-                if ((i + 1 < s.Length && s[i] == s[i + 1]) || (i == s.Length - 1))
+                if ((i + 1 < inputsequence.Length && inputsequence[i] == inputsequence[i + 1]) || (i == inputsequence.Length - 1))
                 {
                     while (j != i)
                     {
@@ -28,7 +28,7 @@ namespace Dev_1
                         {
                             while (k > 0)
                             {
-                                Console.WriteLine(s.Substring(j, k + 1));
+                                Console.WriteLine(inputsequence.Substring(j, k + 1));
                                 k--;
                             }
                         }
