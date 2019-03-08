@@ -22,14 +22,11 @@ namespace Dev_1
                     while (j != i)
                     {
                         int k = i - j;
-                        if (k >= 1)
-                        {
                             while (k > 0)
                             {
                                 Console.WriteLine(inputsequence.Substring(j, k + 1));
                                 k--;
                             }
-                        }
                         j++;
                     }
                     j++;
