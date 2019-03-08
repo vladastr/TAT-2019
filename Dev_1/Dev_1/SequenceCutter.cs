@@ -8,8 +8,6 @@ namespace Dev_1
 {
     public class SequenceCutter
     {
-        string[] resultsequences = { };
-
         public static void Find(string inputsequence)
         {
             if (inputsequence.Length < 2)
@@ -37,11 +35,6 @@ namespace Dev_1
                     j++;
                 }
             }
-        }
-        public void showResult()
-        {
-            for (int i = 0; i < resultsequences.Length - 1; i++)
-                Console.WriteLine(resultsequences[i]);
         }
     }
 }
