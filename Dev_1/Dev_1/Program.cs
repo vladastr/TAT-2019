@@ -10,8 +10,11 @@ namespace Dev_1
     {
         static void Main(string[] args)
         {
-            SequenceCutter.Find(args[0]);
-            Console.ReadKey();
+            for (int i = 0; i < args.Length; i++)
+            {
+                SequenceCutter.Find(args[i]);
+                Console.WriteLine();
+            }
         }
     }
 }
